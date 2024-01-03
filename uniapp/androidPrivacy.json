@@ -1,0 +1,32 @@
+{
+    "version" : "1",
+    "prompt" : "template",
+    "title" : "服务协议和隐私政策",
+    "message" : "欢迎您使用拓客APP，请你务必审慎阅读、充分理解“服务协议”和“隐私政策”各条款，包括但不限于：为了更好的向你提供服务，我们需要收集你的设备标识、操作日志等信息用于分析、优化应用性能。<br/>　　你可阅读<a href=\"https://ddr.amduo.com/service-agreement.html\">《服务协议》</a>和<a href=\"https://ddr.amduo.com/privacy-policy.html\">《隐私政策》</a>了解详细信息。如果你同意，请点击下面按钮开始接受我们的服务。<br/>
+     1.在仅浏览时，我们可能会申请系统设备权限收集设备信息、日志信息，用于信息推送和安全风控，并申请储存权限，用于下载及缓存相关文件。<br/>
+2.我们会申请位置权限，用于帮助你在发布的信息中展示位置或丰富信息推荐维度。<br/>
+3.为帮助你在APP中拨打投诉电话或其他咨询热线，我们会申请拨打电话权限，该权限不会收集隐私信息，且仅在你使用前述功能时使用。<br/>
+4.我们可能会收集SD卡数据，IMEI、设备MAC地址和软件安装列表、通讯录和短信的行为，仅限于帮助我们更好的展示内容给你使用。
+5.上述权限以及摄像头、麦克风、相册、储存空间、GPS、日历、SD卡数据，IMEI、设备MAC地址和软件安装列表、通讯录和短信等敏感权限均不会默认或强制开启收集信息。<br/>",
+    "buttonAccept" : "同意",
+    "buttonRefuse" : "拒绝",
+    "second" : {
+        "title" : "确认提示",
+        "message" : "　　进入应用前，你需先同意<a href=\"https://ddr.amduo.com/service-agreement.html\">《服务协议》</a>和<a href=\"https://ddr.amduo.com/privacy-policy.html\">《隐私政策》</a>，否则将退出应用。",
+        "buttonAccept" : "同意",
+        "buttonRefuse" : "拒绝"
+    },
+    "styles" : {
+        "backgroundColor" : "#ffffff",
+        "borderRadius" : "8px",
+        "title" : {
+            "color" : "#333333"
+        },
+        "buttonAccept" : {
+            "color" : "#FE3355"
+        },
+        "buttonRefuse" : {
+            "color" : "#999999"
+        }
+    }
+}

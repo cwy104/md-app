@@ -19,7 +19,7 @@
 		},
 		onShow: function() {
 			console.log('App Show')
-			console.log('看看版本',uni.$u.config.v);
+			console.log('看看版本', uni.$u.config.v);
 		},
 		onHide: function() {
 			console.log('App Hide')
@@ -35,7 +35,7 @@
 
 	// 设置整个项目的背景色
 	page {
-		background-color: #fff;
+		background-color: #efefef;
 	}
 
 	/* #endif */

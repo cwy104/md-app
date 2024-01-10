@@ -17,13 +17,13 @@
 		<u-popup :show="menuShow" @close="closeMenu" @open="loadMenu" mode="left">
 			<view class="left">
 				<view class="left-header">
-					<u-icon name="file-text-fill" size="20"></u-icon>
+					<u-icon name="file-text-fill" size="30"></u-icon>
 					<h1>全部笔记</h1>
 				</view>
 				<u-line></u-line>
 				<view class="left-content">
 					<view class="left-content-header">
-						<u-icon name="grid-fill"></u-icon>
+						<u-icon name="grid-fill" size="30"></u-icon>
 						<h1>笔记本</h1>
 					</view>
 					<view class="left-content-center">
@@ -188,6 +188,7 @@
 		flex-direction: column;
 		flex-wrap: nowrap;
 		align-items: flex-start;
+		margin: 20rpx;
 
 		&-header {
 			display: flex;
@@ -198,7 +199,7 @@
 			height: 80rpx;
 
 			h1 {
-				font-size: 30rpx;
+				font-size: 34rpx;
 			}
 		}
 
@@ -213,15 +214,13 @@
 				height: 80rpx;
 
 				h1 {
-					font-size: 30rpx;
+					font-size: 34rpx;
 				}
 			}
 
 			&-center {
 				display: flex;
 				flex-direction: column;
-				padding-left: 30upx;
-
 			}
 
 		}

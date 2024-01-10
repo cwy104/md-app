@@ -4,18 +4,18 @@
 			<view class="node-border"></view>
 			<view class="node-Name" @click="changeState(item)">
 				<view class="node-item" v-if="item.pid==0||!item.type">
-					<view class="icon">
+					<!-- <view class="icon">
 						<image src="../../static/24gf-folderOpen.png" :class="true ? 'rt45' : ''" mode="widthFix"
 							class="left-icon">
 						</image>
-					</view>
+					</view> -->
 					<text class="txt">{{item.name}}</text>
 				</view>
 				<view class="node-item" v-else>
-					<view class="icon">
+					<!-- <view class="icon">
 						<image src="../../static/wrqfaa.png" :class="true ? 'rt45' : ''" mode="scaleToFill"
 							class="left-icon1"></image>
-					</view>
+					</view> -->
 					<text class="txt1">{{item.name}}</text>
 					<text class="txt2">{{item.date}}</text>
 				</view>
@@ -123,10 +123,10 @@
 		width: 400rpx;
 		height: 60rpx;
 		line-height: 60rpx;
-		padding-left: 25rpx;
+		// padding-left: 25rpx;
 		display: flex;
 		// border: 1rpx solid #000;
-		margin: 20rpx 0;
+		margin: 10rpx 0;
 		border-radius: 15rpx;
 
 		// .icon {
@@ -135,8 +135,8 @@
 		// }
 
 		.left-icon {
-			width: 70rpx;
-			height: 70rpx;
+			width: 40rpx;
+			height: 40rpx;
 			margin-bottom: 10rpx;
 			margin-right: 20rpx;
 		}
@@ -155,7 +155,7 @@
 
 		.txt1 {
 			line-height: 60rpx;
-			font-size: 30rpx;
+			font-size: 34rpx;
 			color: #222;
 			word-break: break-all;
 			text-overflow: ellipsis;
@@ -176,8 +176,8 @@
 	}
 
 	.txt {
-		line-height: 90rpx;
-		font-size: 30rpx;
+		line-height: 50rpx;
+		font-size: 34rpx;
 		color: #222;
 		word-break: break-all;
 		text-overflow: ellipsis;

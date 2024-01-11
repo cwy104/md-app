@@ -3,19 +3,25 @@
 		<view class="node-li" v-for="(item,index) in arrayList" :key="index">
 			<view class="node-border"></view>
 			<view class="node-Name" @click="changeState(item)">
-				<view class="node-item" v-if="item.pid==0||!item.type">
-					<!-- <view class="icon">
-						<image src="../../static/24gf-folderOpen.png" :class="true ? 'rt45' : ''" mode="widthFix"
-							class="left-icon">
-						</image>
-					</view> -->
+				<view class="node-item" v-if="item.pid==0 && item.children.length == 0">
+					<view class="icon">
+						<u-icon name="bookmark" size="28" color="#000"></u-icon>
+					</view>
 					<text class="txt">{{item.name}}</text>
 				</view>
-				<view class="node-item" v-else>
-					<!-- <view class="icon">
-						<image src="../../static/wrqfaa.png" :class="true ? 'rt45' : ''" mode="scaleToFill"
-							class="left-icon1"></image>
-					</view> -->
+				<view class="node-item" v-if="item.pid==0 && item.children.length > 0">
+					<view class="icon">
+						<u-icon name="bookmark-fill" size="28" color="#000"></u-icon>
+					</view>
+					<text class="txt">{{item.name}}</text>
+					<view class="right">
+						<u-icon name="arrow-down" size="28" color="#000"></u-icon>
+					</view>
+				</view>
+				<view class="node-item" v-if="item.pid!=0">
+					<view class="icon">
+						<u-icon name="bookmark" size="28" color="#000"></u-icon>
+					</view>
 					<text class="txt1">{{item.name}}</text>
 					<text class="txt2">{{item.date}}</text>
 				</view>
@@ -89,7 +95,7 @@
 	.node-ul .node-li:before {
 		position: absolute;
 		content: '';
-		top: 30rpx;
+		top: 24rpx;
 		left: -20rpx;
 		width: 20rpx;
 		height: 1rpx;

@@ -40,6 +40,11 @@
 				</view>
 			</view>
 		</u-popup>
+		<view class="plus">
+			<view class="plus-container">
+				<u-icon name="plus" size="28" color="#fff"></u-icon>
+			</view>
+		</view>
 	</view>
 </template>
 
@@ -201,6 +206,7 @@
 			justify-content: flex-start;
 			line-height: 80rpx;
 			height: 80rpx;
+			margin: 20rpx;
 
 			h1 {
 				font-size: 34rpx;
@@ -227,6 +233,21 @@
 				flex-direction: column;
 			}
 
+		}
+	}
+
+	.plus {
+		position: fixed;
+		right: 40rpx;
+		bottom: 160rpx;
+		border-radius: 20rpx;
+		background-color: red;
+		width: 100rpx;
+		height: 100rpx;
+		
+		&-container {
+			padding-top: 25rpx;
+			padding-left: 25rpx;
 		}
 	}
 </style>
